@@ -51,6 +51,15 @@ class PongChannel < ApplicationCable::Channel
 					match_id: @matchId
 				}
 			end
+			DuelRequest.where(user: current_user).each do |duel_request|
+				UserChannel.broadcast_to duel_request.opponent, content: {
+					remove_challenge: true,
+					reason: 'canceled',
+					chatroom_id: duel_request.message.chat_room.id,
+					message_id: duel_request.message.id
+				}
+				duel_request.destroy
+			end
 		end
 		if ["lobby", "ready"].include? @match[:status]
 			if playerIsLeft()

@@ -55,7 +55,6 @@ class MatchesController < ApplicationController
 
 	def cancel_all_challenges
 		DuelRequest.where(user: current_user).each do |duel_request|
-			puts duel_request.inspect
 			UserChannel.broadcast_to current_user, content: {
 				remove_challenge: true,
 				reason: 'canceled',
