@@ -61,7 +61,7 @@ export const UserUpdateView = Backbone.View.extend({
 						if (response.responseText.includes('PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint \"index_users_on_username\"\n'))
 							_thisView.showPopUpError("Username already exists.");
 						else
-							_thisView.showPopUpError("Server error. Username is not valide");
+							_thisView.showPopUpError("Server error. Username is not valid or already exists.");
 					}
 				}).done(function() {
 				Backbone.history.navigate("user/" + initCurrentUserId + "/show", { trigger: true });

@@ -55,7 +55,7 @@ export const UserCreateView = Backbone.View.extend({
 						if (response.responseText.includes('PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint \"index_users_on_username\"\n'))
 							_thisView.showPopUpError("Username already exist.");
 						else
-							_thisView.showPopUpError("Server error.");
+							_thisView.showPopUpError("Username not valid or already exists.");
 					}
 				}).done(function () {
 					Backbone.history.navigate("game", { trigger: true })

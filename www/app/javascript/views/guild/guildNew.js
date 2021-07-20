@@ -13,7 +13,7 @@ export const GuildNewView = Backbone.View.extend({
 		/* save the new guild and the guild_id to the current user databses */
 		let model = new Guild();
 		var self = this;
-		model.save({ name: $('#name').val(), anagram: $('#anagram').val() }, {
+		model.save({ name: $('#name').val().toUpperCase(), anagram: $('#anagram').val().toUpperCase() }, {
 			success: function (model, response, options) {
 				Backbone.history.navigate("guilds/" + model.get('id'), { trigger: true });
 			},
@@ -27,7 +27,7 @@ export const GuildNewView = Backbone.View.extend({
 				else if (response.responseText.includes('"{"anagram":["is too long') || response.responseText.includes('{"anagram":["is too short'))
 					self.showPopUpError("Anagram must be 1 to 5 characters long.");
 				else
-					self.showPopUpError("Server error.");
+					self.showPopUpError("Name or anagram already exists.");
 			}
 		});
 	},
