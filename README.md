@@ -4,7 +4,7 @@ A web application for playing online multiplayer pong games.
 Logging in with your 42 School account is required.
 
 The application is implemented as a SPA (Single Page Application).
-Built with Ruby on Rails framework, deployed via Docker.
+Built with [Ruby on Rails framework](https://guides.rubyonrails.org/), deployed via Docker.
 
 - Front-end: Javascript (usage of [Backbone.js](https://backbonejs.org/)), HTML, CSS.
 - Back-end: Ruby, SQL (through PostgreSQL database)
