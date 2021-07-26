@@ -13,7 +13,7 @@ Built with Ruby on Rails framework, deployed via Docker.
 
 This project was done as part of 42's Software Engineer program, as a team of 5 members. Project was passed the 20th July 2021.
 
-## Usage 
+## Usage
 
 ### Launch the project
 
