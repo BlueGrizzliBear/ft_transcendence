@@ -51,6 +51,8 @@ The web application features:
 
 <img width="1440" alt="Screenshot 2021-07-17 at 11 36 36" src="https://user-images.githubusercontent.com/49372605/127016130-108350d6-74a1-4d3d-9aae-f5e59f6f1dd1.png">
 
+#### Chat Pages
+
 <img width="1440" alt="Screenshot 2021-07-17 at 11 38 54" src="https://user-images.githubusercontent.com/49372605/127016134-9783f612-f55c-492b-885c-71041f0690de.png">
 
 #### Users Ranking Pages
