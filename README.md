@@ -30,11 +30,11 @@ When the project is launched, the website can be accessed on localhost (via http
 ### Features
 
 The web application features:
-- A login page that enables the user to connect with its 42 Lyon School account.
+- A login page that enables the user to connect with its 42 School account.
 - An online pong game for logged-in users to play pong against each other: playing the game can either be done through normal matchmaking or friend's challenges.
-- A friend list to add or remove connected friends. Options implemented include removing your friend from the list, spectating their match, sending them direct messages, challenging them to a game.
-- A chat which enables users to create chat public/private chat rooms and much more.
-- A guild panel: a page to list all the guilds on the website. Users can create guilds, join/leave guilds and earn points for their guild. Each guild can be displayed with their significant figures, their members, their owner. The page is customized for guild owners to accept/refuse user invitations to join the guild.
+- A friend list to add or remove connected friends. Options implemented include adding/removing your friend from the list, spectating their match, sending them direct messages, challenging them to a game.
+- A chat which enables users to create chat public/private chat rooms and much more...
+- A guild panel: a page to list all the guilds on the website. Users can create guilds, join/leave guilds and earn points for their guild. Each guild is displayed with their significant figures, their members, their owner. The page is customized for guild owners to accept/refuse user invitations to join the guild.
 - A user ranking panel: a page to represent to current users ranking, and to access each users profile info as well as matches info.
 
 ### Some screenshots
